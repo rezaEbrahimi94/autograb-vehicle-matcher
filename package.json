@@ -1,0 +1,46 @@
+{
+  "name": "autograb-vehicle-matcher",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "setup": "node --import tsx scripts/setup.ts",
+    "match": "node --import tsx src/cli.ts",
+    "test": "node --import tsx --test src/*.test.ts",
+    "test:integration": "AUTOGRAB_INTEGRATION=1 node --import tsx --test src/db.integration.test.ts",
+    "test:web": "node --import tsx --test scripts/test-web.ts",
+    "benchmark": "node --import tsx scripts/benchmark.ts",
+    "web": "node --import tsx src/server.ts",
+    "evaluate": "node --import tsx scripts/evaluate.ts",
+    "lint": "eslint . --max-warnings 0",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check",
+    "build:web": "node --import tsx scripts/build-web.ts",
+    "preweb": "npm run build:web",
+    "pretest:web": "npm run build:web",
+    "validate": "npm run lint && npm run format:check && npm run check && npm test"
+  },
+  "dependencies": {
+    "pg": "8.16.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@types/node": "22.15.30",
+    "@types/pg": "8.15.4",
+    "esbuild": "0.25.12",
+    "eslint": "10.15.0",
+    "prettier": "3.10.1",
+    "tsx": "4.20.3",
+    "typescript": "5.8.3",
+    "typescript-eslint": "8.72.2"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "overrides": {
+    "@typescript-eslint/typescript-estree": {
+      "minimatch": "11.0.8"
+    }
+  }
+}

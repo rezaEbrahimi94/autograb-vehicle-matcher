@@ -1,0 +1,343 @@
+[
+  {
+    "name": "readme-complete-golf",
+    "split": "anchor",
+    "input": "Volkswagen Golf 110TSI Comfortline Petrol Automatic Front Wheel Drive",
+    "expected": { "id": "4749339721203712" },
+    "category": "complete",
+    "rationale": "Exact README example. README confidence is 9; do not treat illustrative scores as a learned calibration curve."
+  },
+  {
+    "name": "readme-amarok-ultimate",
+    "split": "anchor",
+    "input": "VW Amarok Ultimate ",
+    "expected": { "id": "4951649860714496" },
+    "category": "partial_fields",
+    "rationale": "Exact README example, including trailing space. README confidence is 7."
+  },
+  {
+    "name": "readme-engine-donor",
+    "split": "anchor",
+    "input": "VW Golf R with engine swap from Toyota 86 GT",
+    "expected": { "id": "5824662093168640" },
+    "category": "donor",
+    "rationale": "Exact README example: target identity remains Golf R. README confidence is 6."
+  },
+  {
+    "name": "readme-absent-ford",
+    "split": "anchor",
+    "input": "Ford Ranger XLT Dual Cab",
+    "expected": { "id": null },
+    "category": "unknown_model",
+    "rationale": "Exact README example: no Ford catalogue records. README confidence is 10."
+  },
+  {
+    "name": "reordered-complete-fields",
+    "split": "challenge",
+    "input": "Manual, rear wheel drive, petrol: Toyota 86 GT.",
+    "expected": { "id": "5027098813005824" },
+    "category": "reordered",
+    "rationale": "All explicit fields identify the manual GT regardless of token order."
+  },
+  {
+    "name": "black-edition-abbreviations",
+    "split": "challenge",
+    "input": "Toyota Kluger Black E/d auto 4WD petrol",
+    "expected": { "id": "5387024387276800" },
+    "category": "abbreviation",
+    "rationale": "Black E/d and 4WD denote Black Edition and Four Wheel Drive; the two-wheel-drive variant is inappropriate."
+  },
+  {
+    "name": "model-typo-with-distinctive-badge",
+    "split": "challenge",
+    "input": "Volkswagen Amrok TDI580 Ultimate diesel automatic 4x4",
+    "expected": { "id": "4951649860714496" },
+    "category": "typo",
+    "rationale": "A one-letter model omission with otherwise complete consistent evidence should recover Amarok."
+  },
+  {
+    "name": "make-typo",
+    "split": "challenge",
+    "input": "Toyta 86 GT petrol manual RWD",
+    "expected": { "id": "5027098813005824" },
+    "category": "typo",
+    "rationale": "A make typo must not erase clear 86 GT manual evidence."
+  },
+  {
+    "name": "absent-corolla-shared-badge",
+    "split": "challenge",
+    "input": "For sale: Toyota Corolla Ascent Sport automatic.",
+    "expected": { "id": null },
+    "category": "unknown_model",
+    "rationale": "Corolla is absent; shared Ascent Sport words must not make this a Camry."
+  },
+  {
+    "name": "absent-landcruiser-shared-badge",
+    "split": "challenge",
+    "input": "Toyota LandCruiser GX diesel automatic 4WD",
+    "expected": { "id": null },
+    "category": "unknown_model",
+    "rationale": "LandCruiser is absent; GX and 4WD overlap with other Toyota models but cannot override explicit model identity."
+  },
+  {
+    "name": "absent-honda-low-overlap",
+    "split": "challenge",
+    "input": "Honda Civic Type R",
+    "expected": { "id": null },
+    "category": "unknown_model",
+    "rationale": "Honda and Civic are absent. An isolated R token cannot establish Golf R identity."
+  },
+  {
+    "name": "golf-cart-not-golf-car",
+    "split": "challenge",
+    "input": "Electric golf cart for the course, two seats and a charger.",
+    "expected": { "id": null },
+    "category": "non_vehicle_catalogue",
+    "rationale": "Golf cart is outside this passenger-vehicle catalogue despite the Golf token."
+  },
+  {
+    "name": "mobility-scooter-no-overlap",
+    "split": "challenge",
+    "input": "Selling an electric mobility scooter with a spare battery.",
+    "expected": { "id": null },
+    "category": "non_vehicle_catalogue",
+    "rationale": "Clearly identifies an item absent from the supplied catalogue rather than merely lacking car attributes."
+  },
+  {
+    "name": "toyota-target-vw-engine-donor",
+    "split": "challenge",
+    "input": "Toyota 86 GT manual for sale, fitted with an engine from a Volkswagen Golf R.",
+    "expected": { "id": "5027098813005824" },
+    "category": "donor",
+    "rationale": "The target is Toyota 86 GT manual; Golf R is the donor, not the target."
+  },
+  {
+    "name": "donor-transmission-not-target",
+    "split": "challenge",
+    "input": "Selling my automatic VW Golf R; the engine came from a manual Toyota 86 GT.",
+    "expected": { "id": "5824662093168640" },
+    "category": "donor",
+    "rationale": "Manual belongs to the donor clause and must not contradict the target's explicit automatic transmission."
+  },
+  {
+    "name": "camry-target-tiguan-trade",
+    "split": "challenge",
+    "input": "Selling Toyota Camry SL hybrid, would swap for a Volkswagen Tiguan R-Line.",
+    "expected": { "id": "5681725581557760" },
+    "category": "trade",
+    "rationale": "The listed car is Camry SL Hybrid; Tiguan is the requested trade."
+  },
+  {
+    "name": "trade-mentioned-before-target",
+    "split": "challenge",
+    "input": "Would swap for a Toyota Camry Hybrid. The car I am selling is a VW Tiguan R-Line.",
+    "expected": { "id": "5811435875598336" },
+    "category": "trade",
+    "rationale": "Target role, not first car mention, determines identity."
+  },
+  {
+    "name": "corrected-model-heading",
+    "split": "challenge",
+    "input": "Toyota Kluger GX. Correction: the listing title is wrong; this is a Toyota 86 GT manual.",
+    "expected": { "id": "5027098813005824" },
+    "category": "correction",
+    "rationale": "Explicit correction supersedes the incorrect Kluger heading."
+  },
+  {
+    "name": "corrected-transmission",
+    "split": "challenge",
+    "input": "Toyota 86 GT automatic. Correction: it is manual, not automatic.",
+    "expected": { "id": "5027098813005824" },
+    "category": "correction",
+    "rationale": "Later explicit correction changes transmission while preserving model and badge."
+  },
+  {
+    "name": "negated-unknown-model",
+    "split": "challenge",
+    "input": "This is not a Toyota Corolla. I am selling a Toyota Camry SL hybrid.",
+    "expected": { "id": "5681725581557760" },
+    "category": "negation",
+    "rationale": "A negated absent model must not force null or replace the stated Camry target."
+  },
+  {
+    "name": "manual-not-automatic",
+    "split": "challenge",
+    "input": "Toyota 86 GT manual, not automatic.",
+    "expected": { "id": "5027098813005824" },
+    "category": "negation",
+    "rationale": "Negation scope makes automatic negative evidence rather than a second positive attribute."
+  },
+  {
+    "name": "automatic-not-manual",
+    "split": "challenge",
+    "input": "Toyota 86 GT automatic, not manual.",
+    "expected": { "id": "6434473696559104" },
+    "category": "negation",
+    "rationale": "Paired with manual-not-automatic to expose caches or normalization that discard negation/order."
+  },
+  {
+    "name": "petrol-not-hybrid",
+    "split": "challenge",
+    "input": "Toyota Camry SL petrol, not the hybrid version.",
+    "expected": { "id": "4761402271072256" },
+    "category": "negation",
+    "rationale": "The explicit non-hybrid SL petrol is present. Hybrid must not win token matching."
+  },
+  {
+    "name": "gts-not-gt-or-apollo",
+    "split": "challenge",
+    "input": "Toyota 86 GTS manual, standard version, not GT and not Apollo Blue.",
+    "expected": { "id": "5308573789716480" },
+    "category": "negation",
+    "rationale": "GTS is distinct from GT; explicit exclusions remove GT and Apollo variants."
+  },
+  {
+    "name": "gt-missing-transmission",
+    "split": "challenge",
+    "input": "Toyota 86 GT petrol rear wheel drive for sale.",
+    "expected": {
+      "make": "Toyota",
+      "model": "86",
+      "badge": "GT",
+      "fuel_type": "Petrol",
+      "drive_type": "Rear Wheel Drive"
+    },
+    "equivalentIds": ["6434473696559104", "5027098813005824"],
+    "category": "semantic_tie",
+    "rationale": "Both GT transmissions satisfy the evidence. Select by listing count; missing transmission must not be invented."
+  },
+  {
+    "name": "camry-hybrid-missing-badge",
+    "split": "challenge",
+    "input": "Automatic Toyota Camry hybrid sedan.",
+    "expected": {
+      "make": "Toyota",
+      "model": "Camry",
+      "fuel_type": "Hybrid-Petrol",
+      "transmission_type": "Automatic"
+    },
+    "equivalentIds": ["6244675534979072", "5118775628136448", "5681725581557760"],
+    "category": "semantic_tie",
+    "rationale": "Ascent, Ascent Sport and SL hybrid are equally compatible with the supplied attributes; tie-break using listing counts."
+  },
+  {
+    "name": "golf-132tsi-missing-premium",
+    "split": "challenge",
+    "input": "Volkswagen Golf 132TSI auto for sale.",
+    "expected": { "make": "Volkswagen", "model": "Golf", "transmission_type": "Automatic" },
+    "equivalentIds": ["5734502139691008", "4608602232848384"],
+    "category": "semantic_tie",
+    "rationale": "Both Alltrack 132TSI variants fit; omitted Premium is unknown rather than an explicit exclusion."
+  },
+  {
+    "name": "amarok-highline-missing-engine",
+    "split": "challenge",
+    "input": "Amarok highline diesel auto 4WD.",
+    "expected": {
+      "make": "Volkswagen",
+      "model": "Amarok",
+      "fuel_type": "Diesel",
+      "transmission_type": "Automatic",
+      "drive_type": "Four Wheel Drive"
+    },
+    "equivalentIds": ["5997253340692480", "5158834049908736"],
+    "category": "semantic_tie",
+    "rationale": "TDI550 Highline and TDI580 Highline Black remain compatible when engine designation and Black are omitted."
+  },
+  {
+    "name": "badge-without-model",
+    "split": "challenge",
+    "input": "Toyota Ascent Sport hybrid automatic.",
+    "expected": { "id": "5118775628136448" },
+    "category": "partial_fields",
+    "rationale": "Only Camry Ascent Sport hybrid matches in this catalogue; missing model should still reduce confidence compared with complete evidence."
+  },
+  {
+    "name": "rav4-four-wheel-drive",
+    "split": "challenge",
+    "input": "Toyota RAV4 GX 4WD.",
+    "expected": { "id": "4637157457133568" },
+    "category": "partial_fields",
+    "rationale": "Only the hybrid automatic GX has Four Wheel Drive in the supplied catalogue. Do not assume every RAV4 GX is petrol."
+  },
+  {
+    "name": "tiguan-allspace-without-highline",
+    "split": "challenge",
+    "input": "VW Tiguan Allspace, 162TSI automatic.",
+    "expected": { "id": "5332080883924992" },
+    "category": "partial_fields",
+    "rationale": "Allspace and 162TSI jointly distinguish the supplied variant despite missing Highline."
+  },
+  {
+    "name": "apollo-manual-abbreviated",
+    "split": "challenge",
+    "input": "Toyota 86 Apollo GTS, manual gearbox.",
+    "expected": { "id": "4655849154805760" },
+    "category": "partial_fields",
+    "rationale": "Apollo plus GTS and manual identifies GTS Apollo Blue manual; word order is irrelevant."
+  },
+  {
+    "name": "explicit-diesel-camry-absent",
+    "split": "challenge",
+    "input": "Toyota Camry Ascent diesel automatic, definitely not petrol or hybrid.",
+    "expected": { "id": null },
+    "category": "contradictory_catalogue",
+    "rationale": "No diesel Camry exists in this catalogue. Do not silently drop a strongly explicit fuel constraint to force a match."
+  },
+  {
+    "name": "explicit-four-wheel-86-absent",
+    "split": "challenge",
+    "input": "Factory Toyota 86 GT four wheel drive, not rear wheel drive.",
+    "expected": { "id": null },
+    "category": "contradictory_catalogue",
+    "rationale": "All supplied 86 GT records are rear-wheel drive. Description gives an explicit incompatible catalogue attribute, not a modification."
+  },
+  {
+    "name": "negated-sale-target",
+    "split": "challenge",
+    "input": "I am not selling the VW Golf R. The car for sale is Toyota 86 GT manual.",
+    "expected": { "id": "5027098813005824" },
+    "category": "negation",
+    "rationale": "Target selection must respect the negated sale clause."
+  },
+  {
+    "name": "previous-car-not-current-target",
+    "split": "challenge",
+    "input": "I previously owned a Golf GTI. Now selling my Toyota Camry SL hybrid.",
+    "expected": { "id": "5681725581557760" },
+    "category": "multiple_mentions",
+    "rationale": "Historical ownership is irrelevant to the current advertised vehicle."
+  },
+  {
+    "name": "insufficient-evidence",
+    "split": "challenge",
+    "input": "A small car with four wheels, runs well.",
+    "expected": {},
+    "category": "insufficient_evidence",
+    "rationale": "No justified unique vehicle and no evidence of absence. This is a contract/uncertainty probe, excluded from exact-match accuracy; do not require null or award a correctness point for an arbitrary ID."
+  },
+  {
+    "name": "quoted-wrong-label",
+    "split": "challenge",
+    "input": "The website says 'Toyota Camry Hybrid' but that label is wrong. This advert is for my VW Golf GTI.",
+    "expected": { "id": "4628393442148352" },
+    "category": "correction",
+    "rationale": "The rejected quoted label must not dominate the explicitly corrected target."
+  },
+  {
+    "name": "spelled-out-model-number",
+    "split": "challenge",
+    "input": "Toyota eighty-six GT, manual, petrol, rear wheel drive.",
+    "expected": { "id": "5027098813005824" },
+    "category": "semantic_alias",
+    "rationale": "Spelled-out model number tests semantic normalization beyond a literal token dictionary. This expectation is an authored interpretation, not a README-provided answer."
+  },
+  {
+    "name": "colour-adjective-not-edition",
+    "split": "challenge",
+    "input": "Toyota 86 GT manual, painted blue.",
+    "expected": { "id": "5027098813005824" },
+    "category": "irrelevant_attribute",
+    "rationale": "Paint colour does not change GT into GTS Apollo Blue. Catalogue badge distinctions outrank a general colour word."
+  }
+]

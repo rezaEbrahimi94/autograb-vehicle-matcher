@@ -1,0 +1,13 @@
+node_modules/
+.env
+.env.*
+.venv*/
+.pgdata/
+.pgsocket/
+*.log
+*.joblib
+*.pyc
+.DS_Store
+results/
+
+web/app.js

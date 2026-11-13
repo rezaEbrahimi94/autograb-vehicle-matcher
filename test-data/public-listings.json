@@ -1,0 +1,406 @@
+{
+  "description": "Frozen public-listing selection sample; provisional agent labels; not a population estimate or post-selection confirmation. No tuning after scoring.",
+  "cases": [
+    {
+      "case": 1,
+      "source": "https://www.carspy.co.nz/listing/1518561",
+      "input": "2012 Toyota 86 GT | 86 | Limited Edition!",
+      "expected": null,
+      "expectedCandidates": [],
+      "reason": "NZactualdealerlisting130595km automatic; exactLimitedEdition absent; syndicatedRPM vehicle countedonce."
+    },
+    {
+      "case": 2,
+      "source": "https://www.gumtree.com.au/web/listing/cars-vans-utes/1344904488",
+      "input": "2017 Toyota 86 LIMITED EDITION (SOLAR ORANGE) ZN6 MY17",
+      "expected": null,
+      "expectedCandidates": [],
+      "reason": "ActualSkyviewdealerlistingstock1940 VINJF1ZN6K81GG034104 175164km; exacteditionabsent; sitesaysWhitebut colour not schema."
+    },
+    {
+      "case": 3,
+      "source": "https://www.carsales.com.au/cars/details/2017-toyota-86-gts-auto/SSE-AD-20432383/",
+      "input": "Selling my 2017 Toyota 86 GTS Automatic in very good condition. Clean, well-maintained and completely stock.",
+      "expected": "5871523743137792",
+      "expectedCandidates": ["5871523743137792"],
+      "reason": "Original seller sentences; explicitautomatic."
+    },
+    {
+      "case": 4,
+      "source": "https://www.carsales.com.au/cars/details/2017-toyota-86-gt-auto/SSE-AD-16659321/",
+      "input": "This Toyota 86 GT has keep cool in the summer with air conditioning.",
+      "expected": "6434473696559104",
+      "expectedCandidates": ["5027098813005824", "6434473696559104"],
+      "reason": "Original awkward seller sentence preserved; gearbox omitted, bothGT rows."
+    },
+    {
+      "case": 5,
+      "source": "https://www.carsales.com.au/cars/details/2012-toyota-86-gts-auto/SSE-AD-20972462/",
+      "input": "2012 Toyota 86 GTS Auto\nTransmission: 6-Speed Automatic with Manual override",
+      "expected": "5871523743137792",
+      "expectedCandidates": ["5871523743137792"],
+      "reason": "Headingplusoriginal transmission item, manualoverride is automatic feature."
+    },
+    {
+      "case": 6,
+      "source": "https://www.carsales.com.au/cars/details/2017-toyota-86-gts-auto/SSE-AD-19449668/",
+      "input": "2017 Toyota 86 GTS Auto\nselling due to just finished finance and looking to upgrade to another car.",
+      "expected": "5871523743137792",
+      "expectedCandidates": ["5871523743137792"],
+      "reason": "Headingplusoriginal complete replacement clause."
+    },
+    {
+      "case": 7,
+      "source": "https://www.carsales.com.au/cars/details/2013-volkswagen-golf-90tsi-comfortline-7-auto-my14/SSE-AD-21134207/",
+      "input": "We are selling our much-loved 2013 VW Golf 90TSI Comfortline due to an upgrade.",
+      "expected": null,
+      "expectedCandidates": [],
+      "reason": "Whole original seller sentence; unsupported90TSI."
+    },
+    {
+      "case": 8,
+      "source": "https://www.carsales.com.au/cars/details/2013-volkswagen-golf-90tsi-7-auto/SSE-AD-20209090/",
+      "input": "Selling our 2013 VW Golf 90TSI MK7 Auto. It\u2019s been a reliable extra car and we\u2019re upgrading.",
+      "expected": null,
+      "expectedCandidates": [],
+      "reason": "Two original seller sentences; unsupported90TSI."
+    },
+    {
+      "case": 9,
+      "source": "https://www.carsales.com.au/cars/details/2015-volkswagen-golf-110tsi-highline-7-auto-my16/SSE-AD-20882319/",
+      "input": "Well looked after Volkswagen Golf 110TSI Highline with only 79,000 km travelled.",
+      "expected": "4980237163036672",
+      "expectedCandidates": ["4980237163036672"],
+      "reason": "Whole original seller sentence."
+    },
+    {
+      "case": 10,
+      "source": "https://www.carsales.com.au/cars/details/2015-volkswagen-golf-110tsi-highline-7-auto-my16/SSE-AD-19075793/",
+      "input": "Well-maintained white 2015 VW Golf with just 71,600 km. Second owner, in very good condition both inside and out.",
+      "expected": "5824662093168640",
+      "expectedCandidates": [
+        "4608602232848384",
+        "4628393442148352",
+        "4749339721203712",
+        "4890077209559040",
+        "4909868418859008",
+        "4980237163036672",
+        "5734502139691008",
+        "5824662093168640"
+      ],
+      "reason": "Two original seller sentences; all Golf rows."
+    },
+    {
+      "case": 11,
+      "source": "https://www.carsales.com.au/cars/details/2015-volkswagen-golf-110tsi-highline-7-auto-my16/SSE-AD-20821968/",
+      "input": "Well\u2011maintained 2015 Golf hatch with factory R\u2011Line package and Driver Assistance package.",
+      "expected": "5824662093168640",
+      "expectedCandidates": [
+        "4608602232848384",
+        "4628393442148352",
+        "4749339721203712",
+        "4890077209559040",
+        "4909868418859008",
+        "4980237163036672",
+        "5734502139691008",
+        "5824662093168640"
+      ],
+      "reason": "Whole original sentence; packages do not establish grade, all Golf rows. Nonbreakinghyphens retained."
+    },
+    {
+      "case": 12,
+      "source": "https://www.carsales.com.au/cars/details/2015-volkswagen-golf-110tsi-highline-7-auto-my16/SSE-AD-21062229/",
+      "input": "2015 Volkswagen Golf 110TSI Highline 7 Auto MY16\nReason for selling: upgrading vehicle",
+      "expected": "4980237163036672",
+      "expectedCandidates": ["4980237163036672"],
+      "reason": "Headingplusoriginal reason item."
+    },
+    {
+      "case": 13,
+      "source": "https://www.carsales.com.au/cars/details/2015-toyota-camry-atara-sl-auto/SSE-AD-21093600/",
+      "input": "Selling my well-presented 2015 Toyota Camry Atara SL in black, with 168,940 km on the odometer.",
+      "expected": null,
+      "expectedCandidates": [],
+      "reason": "Whole seller sentence;AtaraSL absent."
+    },
+    {
+      "case": 14,
+      "source": "https://www.carsales.com.au/cars/details/2015-toyota-camry-atara-sl-auto/SSE-AD-21004868/",
+      "input": "We're reluctantly selling our much-loved 2015 Toyota Camry Atara SL, only because our growing family needs a larger vehicle.",
+      "expected": null,
+      "expectedCandidates": [],
+      "reason": "Whole seller sentence;unsupportedAtaraSL."
+    },
+    {
+      "case": 15,
+      "source": "https://www.carsales.com.au/cars/details/2022-toyota-camry-ascent-auto/OAG-AD-26429682/",
+      "input": "This white Toyota CAMRY ASCENT HYBRID is in excellent condition. This is a 5 seat, 4 door vehicle with automatic transmission.",
+      "expected": "6244675534979072",
+      "expectedCandidates": ["6244675534979072"],
+      "reason": "Two original dealer sentences, exacthybridAscent."
+    },
+    {
+      "case": 16,
+      "source": "https://www.carsales.com.au/cars/details/2022-toyota-camry-ascent-auto/SSE-AD-20960926/",
+      "input": "Selling my Dec 2022 Toyota Camry Hybrid in Silver Pearl, with just 41,400 km.",
+      "expected": "6244675534979072",
+      "expectedCandidates": ["5118775628136448", "5681725581557760", "6244675534979072"],
+      "reason": "Whole seller sentence; hybrid narrows to threeCamrygrades."
+    },
+    {
+      "case": 17,
+      "source": "https://www.carsales.com.au/cars/details/2022-toyota-camry-ascent-auto/SSE-AD-20950596/",
+      "input": "This 2022 Toyota Camry Ascent Auto has adaptive cruise control, front bottle holders, lane departure warning, 17\" alloy wheels and LED tail lamps.",
+      "expected": "6244675534979072",
+      "expectedCandidates": ["6244675534979072", "6450252131336192"],
+      "reason": "Whole seller sentence; bothAscentfuels retained."
+    },
+    {
+      "case": 18,
+      "source": "https://www.carsales.com.au/cars/details/2022-toyota-camry-ascent-auto/SSE-AD-21000677/",
+      "input": "2022 Toyota Camry Ascent Auto\nReason for Selling: New car bought",
+      "expected": "6244675534979072",
+      "expectedCandidates": ["6244675534979072", "6450252131336192"],
+      "reason": "Headingplusoriginal replacement item; fuel omitted."
+    },
+    {
+      "case": 19,
+      "source": "https://www.carsales.com.au/cars/details/2014-volkswagen-tiguan-155tsi-5n-auto-4motion-my14/SSE-AD-20434920/",
+      "input": "2014 Volkswagen Tiguan 155TSI 4MOTION\nThis Tiguan has the same engine as the Golf GTI",
+      "expected": null,
+      "expectedCandidates": [],
+      "reason": "Original identificationphrase plus complete comparisonclause; GolfGTI is comparison vehicle,155TSI unsupported."
+    },
+    {
+      "case": 20,
+      "source": "https://www.carsales.com.au/cars/details/2014-volkswagen-tiguan-155tsi-5n-auto-4motion-my14/SSE-AD-20666313/",
+      "input": "Confidence and style is what the 2014 Volkswagen Tiguan 155TSI is all about.",
+      "expected": null,
+      "expectedCandidates": [],
+      "reason": "Whole original seller sentence;155TSI absent."
+    },
+    {
+      "case": 21,
+      "source": "https://www.carsales.com.au/cars/details/2020-volkswagen-tiguan-110tsi-comfortline-5n-auto-my20/SSE-AD-20676596/",
+      "input": "Reluctantly selling my 2020 Volkswagen Tiguan Comfortline.",
+      "expected": "5382658418802688",
+      "expectedCandidates": [
+        "4819708465381376",
+        "5050605907214336",
+        "5382658418802688",
+        "5803147863785472"
+      ],
+      "reason": "Whole seller sentence; bareComfortline retains fourcompatible grades, no omittedFWD inference."
+    },
+    {
+      "case": 22,
+      "source": "https://www.carsales.com.au/cars/details/2020-volkswagen-tiguan-110tsi-trendline-5n-auto-my20/SSE-AD-21093917/",
+      "input": "This 2020 Volkswagen Tiguan is a well conceived vehicle deserving of serious consideration from many perspectives.",
+      "expected": "5332080883924992",
+      "expectedCandidates": [
+        "4514044232859648",
+        "4819708465381376",
+        "5050605907214336",
+        "5332080883924992",
+        "5382658418802688",
+        "5803147863785472",
+        "5811435875598336",
+        "5945608372224000"
+      ],
+      "reason": "Whole seller sentence; alleightTiguan rows."
+    },
+    {
+      "case": 23,
+      "source": "https://www.carsales.com.au/cars/details/2020-volkswagen-tiguan-110tsi-comfortline-allspace-5n-auto-my21/SSE-AD-20746725/",
+      "input": "This Volkswagen Tiguan 2020 110TSI Comfortline Allspace has cruise control, central locking, keyless start and front parking sensors.",
+      "expected": "5050605907214336",
+      "expectedCandidates": ["5050605907214336"],
+      "reason": "Whole original seller equipment sentence, exactgrade."
+    },
+    {
+      "case": 24,
+      "source": "https://www.carsales.com.au/cars/details/2020-volkswagen-tiguan-110tsi-trendline-5n-auto-my20/SSE-AD-21002479/",
+      "input": "2020 Volkswagen Tiguan 110TSI Trendline 5N Auto MY20\nSelling due to upgrade to work vehicle",
+      "expected": "4514044232859648",
+      "expectedCandidates": ["4514044232859648"],
+      "reason": "Headingpluscomplete original replacement phrase."
+    },
+    {
+      "case": 25,
+      "source": "https://www.carsales.com.au/cars/details/2006-toyota-kluger-cv-auto-awd-my06/SSE-AD-18827828/",
+      "input": "2006 Toyota Kluger CV Auto AWD MY06\nPlease note: Selling without a roadworthy.",
+      "expected": null,
+      "expectedCandidates": [],
+      "reason": "Headingpluswhole original sentence, unsupportedCV."
+    },
+    {
+      "case": 26,
+      "source": "https://www.carsales.com.au/cars/details/2007-toyota-kluger-cv-auto-awd-my06/SSE-AD-20532688/",
+      "input": "2007 Toyota Kluger AWD V6 CVX Auto Super reliable and mechanically perfect, recently serviced.",
+      "expected": null,
+      "expectedCandidates": [],
+      "reason": "Originalselleropening, unsupportedCVX; omittedtitle saysCV, bothabsent."
+    },
+    {
+      "case": 27,
+      "source": "https://www.carsales.com.au/cars/details/2014-toyota-kluger-gx-auto-2wd/SSE-AD-20758743/",
+      "input": "2014 Toyota Kluger GX Auto 2WD, purchased new in December 2014 and owned by the same owner since new.",
+      "expected": "6090711829053440",
+      "expectedCandidates": ["6090711829053440"],
+      "reason": "Whole original sentence."
+    },
+    {
+      "case": 28,
+      "source": "https://www.carsales.com.au/cars/details/2005-toyota-kluger-cv-auto-awd/SSE-AD-21109068/",
+      "input": "Selling my trusty Kluger. I am the second owner, and have had this car since 2015.",
+      "expected": "6090711829053440",
+      "expectedCandidates": [
+        "4683336945500160",
+        "4964811922210816",
+        "5246286898921472",
+        "5387024387276800",
+        "5809236852342784",
+        "6090711829053440",
+        "6372186805764096",
+        "6512924294119424"
+      ],
+      "reason": "Two original seller sentences; allKlugerrows, no omittedCV inference."
+    },
+    {
+      "case": 29,
+      "source": "https://www.carsales.com.au/cars/details/2014-toyota-kluger-gx-auto-2wd/SSE-AD-20181557/",
+      "input": "2014 Toyota Kluger GX Auto 2WD\nOriginal Toyota mats New Michelin tyres Cargo tie-down hooks Fog lights New battery Multi-function steering wheel",
+      "expected": "6090711829053440",
+      "expectedCandidates": ["6090711829053440"],
+      "reason": "Headingpluscontiguous complete accessoryitems."
+    },
+    {
+      "case": 30,
+      "source": "https://www.carsales.com.au/cars/details/2014-toyota-kluger-gx-auto-2wd/SSE-AD-18956506/",
+      "input": "2014 Toyota Kluger GX Auto 2WD\nOnly selling as kids left home and I am downsizing.",
+      "expected": "6090711829053440",
+      "expectedCandidates": ["6090711829053440"],
+      "reason": "Headingpluswhole householdreplacement sentence."
+    },
+    {
+      "case": 31,
+      "source": "https://www.carsales.com.au/cars/details/2014-toyota-rav4-cruiser-auto-awd-my14/SSE-AD-20775547/",
+      "input": "So, I'm selling my beautiful 2014 Toyota RAV4 Cruiser4x4 Turbo Diesel Automatic.",
+      "expected": null,
+      "expectedCandidates": [],
+      "reason": "Whole original seller sentence with compactCruiser4x4 spelling, all diesels absent."
+    },
+    {
+      "case": 32,
+      "source": "https://www.carsales.com.au/cars/details/2014-toyota-rav4-cruiser-auto-awd-my14/SSE-AD-19640247/",
+      "input": "Well-maintained 2014 Toyota RAV4 Cruiser All-Wheel Drive (2.2L Diesel Auto) in silver, with 179,000 km on the clock.",
+      "expected": null,
+      "expectedCandidates": [],
+      "reason": "Whole original seller sentence; dieselabsent."
+    },
+    {
+      "case": 33,
+      "source": "https://www.carsales.com.au/cars/details/2019-toyota-rav4-edge-auto-awd/SSE-AD-20840263/",
+      "input": "Selling my 2019 Toyota RAV4 Edge AWD, finished in blue and with just 66,004 km.",
+      "expected": "4707526201311232",
+      "expectedCandidates": ["4707526201311232"],
+      "reason": "Whole original seller sentence."
+    },
+    {
+      "case": 34,
+      "source": "https://www.carsales.com.au/cars/details/2014-toyota-rav4-gx-auto-awd-my14/SSE-AD-20479993/",
+      "input": "This Toyota RAV4 SUV has bluetooth functionality, cruise control, USB audio input, power door mirrors, iPod connectivity and air conditioning.",
+      "expected": "5224610668740608",
+      "expectedCandidates": [
+        "4506798421704704",
+        "4637157457133568",
+        "4707526201311232",
+        "4807414054387712",
+        "4989001178021888",
+        "5149400045191168",
+        "5224610668740608",
+        "5270476154732544",
+        "5633578956226560",
+        "6114901084864512",
+        "6294772260012032"
+      ],
+      "reason": "Whole original equipment sentence; allRAV4rows."
+    },
+    {
+      "case": 35,
+      "source": "https://www.carsales.com.au/cars/details/2019-toyota-rav4-edge-auto-awd/SSE-AD-21022562/",
+      "input": "This 2019 Toyota RAV4 Edge Auto AWD has front parking sensors.",
+      "expected": "4707526201311232",
+      "expectedCandidates": ["4707526201311232"],
+      "reason": "Whole original equipment sentence."
+    },
+    {
+      "case": 36,
+      "source": "https://www.carsales.com.au/cars/details/2019-toyota-rav4-edge-auto-awd/SSE-AD-20346983/",
+      "input": "2019 Toyota RAV4 Edge Auto AWD\nSelling due upgrading to bigger car.",
+      "expected": "4707526201311232",
+      "expectedCandidates": ["4707526201311232"],
+      "reason": "Headingpluswhole original replacement sentence."
+    },
+    {
+      "case": 37,
+      "source": "https://www.carsales.com.au/cars/details/2021-volkswagen-amarok-tdi580-aventura-2h-auto-4motion-perm-my21-dual-cab/SSE-AD-20806347/",
+      "input": "2021 Volkswagen Amarok TDI580 V6 Aventura \u2014 $41,990 92,000 km | Excellent condition | Full service history | Rego until April 2027",
+      "expected": null,
+      "expectedCandidates": [],
+      "reason": "Originalselleropening, unsupportedAventura."
+    },
+    {
+      "case": 38,
+      "source": "https://www.carsales.com.au/cars/details/2024-volkswagen-amarok-tdi600-aventura-nf-auto-4motion-perm-my24-dual-cab/SSE-AD-21084878/",
+      "input": "We are selling our Amarok Aventura. The vehicle is in excellent condition and has been faultless.",
+      "expected": null,
+      "expectedCandidates": [],
+      "reason": "Two originalseller sentences, unsupportedAventura."
+    },
+    {
+      "case": 39,
+      "source": "https://www.carsales.com.au/cars/details/2017-volkswagen-amarok-tdi400-core-plus-2h-manual-4mot-my18-dual-cab/SSE-AD-19502453/",
+      "input": "Selling 2017 Amarok TDI 400 Core 2H Manual 4motion 114500 km - Selling due to upgrade",
+      "expected": "5715778363981824",
+      "expectedCandidates": ["5715778363981824"],
+      "reason": "Contiguousselleropening saysCore400; omittedtitle saysCorePlus, excerpt governs. Spacedcode explicit."
+    },
+    {
+      "case": 40,
+      "source": "https://www.carsales.com.au/cars/details/2017-volkswagen-amarok-tdi420-core-2h-auto-4motion-perm-my17-dual-cab/SSE-AD-20843483/",
+      "input": "2017 Volkswagen Amarok an amazing work or play Ute I am the 2nd owner and it comes with full service history.",
+      "expected": "5997253340692480",
+      "expectedCandidates": [
+        "4589878457139200",
+        "4602005163081728",
+        "4730615945494528",
+        "4871353433849856",
+        "4951649860714496",
+        "5158834049908736",
+        "5434303387271168",
+        "5504672131448832",
+        "5715778363981824",
+        "5978593721057280",
+        "5997253340692480"
+      ],
+      "reason": "Wholeoriginalopening; all11Amarokrows."
+    },
+    {
+      "case": 41,
+      "source": "https://www.carsales.com.au/cars/details/2017-volkswagen-amarok-tdi420-core-2h-auto-4motion-perm-my17-dual-cab/SSE-AD-20654824/",
+      "input": "2017 Volkswagen Amarok TDI420 Core 2H Auto 4MOTION Perm MY17 Dual Cab\nCanyon sidesteps, slotted rotors,",
+      "expected": "4589878457139200",
+      "expectedCandidates": ["4589878457139200"],
+      "reason": "Headingplusoriginal two completeaccessoryitems endingcomma; Canyon modifies sidesteps notgrade."
+    },
+    {
+      "case": 42,
+      "source": "https://www.carsales.com.au/cars/details/2017-volkswagen-amarok-tdi420-core-2h-auto-4motion-perm-my17-dual-cab/SSE-AD-17730785/",
+      "input": "2017 Volkswagen Amarok TDI420 Core 2H Auto 4MOTION Perm MY17 Dual Cab\nSelling due to fleet upgrade.",
+      "expected": "4589878457139200",
+      "expectedCandidates": ["4589878457139200"],
+      "reason": "Headingpluswhole original sellerreplacement sentence."
+    }
+  ]
+}

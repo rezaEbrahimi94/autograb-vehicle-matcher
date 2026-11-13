@@ -1,0 +1,118 @@
+{
+  "verifiedAt": "2026-11-13T22:54:38.639243+00:00",
+  "node": "v22.22.0",
+  "checks": {
+    "cleanNpmInstall": true,
+    "freshDatabaseSetup": true,
+    "typecheck": true,
+    "unitPassed": 179,
+    "unitDatabaseSkipped": 6,
+    "unitFailed": 0,
+    "realPostgresPassed": 6,
+    "apiPassed": 5,
+    "orderedSuppliedOutputs": 20,
+    "suppliedFileHashesUnchanged": true,
+    "behaviorParity": {
+      "checks": 1205,
+      "fields": [
+        "vehicleId",
+        "confidence",
+        "candidateIds"
+      ],
+      "unchanged": true,
+      "developmentCases": 1163,
+      "latestFreshCases": 42
+    },
+    "githubCI": "Updated workflow; remote run for these changes pending publication",
+    "typedLint": true,
+    "formatCheck": true,
+    "browserBuild": true,
+    "dependencyAudit": {
+      "knownVulnerabilities": 0,
+      "scope": "all installed dependencies; advisory database at verification time"
+    },
+    "publicationScan": "No private source paths, private instructional source content or credential patterns found in maintained publication files."
+  },
+  "sourceHash": "2ce2822b1b9d8bab09bc0f70845c60485569c98ef3705cb6bd079fee43ffe3be",
+  "runtimeFiles": {
+    "src/matcher.ts": "845a4f141242138f80c12443f1cd6d8908f6b93e7aaac65ae5096bf19c2afcd0",
+    "src/vehicle-matcher.ts": "63783dcaf76aadef4220d26fcdb58d52d46b91127e4e98e6173085bed2e73b64",
+    "src/candidate-evidence.ts": "09f26a359344a169811166d19363aa5156c8dd5e11247361d302e40ebd07a956",
+    "src/evidence-scope.ts": "6b3bb61066f54aff6fadda76bd99a48516d90f15d4576413f351f4dbaae9b63f",
+    "src/interpretation-relations.ts": "aa00a865e8c1b5909bab57cb11dd5952ebdf56c5c58bf6c49ca6589acf858303",
+    "src/evidence-composition.ts": "b41cf8ebc4ab2aa50775929a475890974c1e2f9138daed4620987a826cefad1d",
+    "src/listing-structure.ts": "721ab3df232092dd1360290d055cfd60f39838d7094ac563756bec6bba88459a",
+    "src/mention-context.ts": "c584a5dea8268b2bb5dd8071d023f605beb0f61f9fb31adbf768e086292efa18",
+    "src/nominal-context.ts": "025d7f24981ce4327b902cf92d9f691fb3d828de221d2818b34f5a377326c45c",
+    "src/matcher-factory.ts": "5e56f567997b1e969c72ed0fece73541d6bf2e6bfe0bef1d30964de42594683c",
+    "src/db.ts": "71c826661b412953f09cf813e0b347f99eeab25b9509b4d248a18f08ecab54b2",
+    "src/contracts.ts": "13700c7c86f4d479fd5e93188fccaf697270ff81f45b415a440f75bbcc9ab518",
+    "src/config.ts": "13fd3db05fd2a770916ecf1225580d7d1491c988e813c013d2c81d48ff868734",
+    "src/invariant.ts": "9b1d7ada3c40fc45c273f747217976a080dec33d8428ff8f1a53fe04904b0e79",
+    "src/server.ts": "1b90d0cba2a23a5ac1152a71f3c61202d14fc7515ce3500acbe956a9fcf50351",
+    "src/cli.ts": "f364dbdb228be2b487ce70d2025cd941a4842784f9e8a7053395dbba50fa7888",
+    "web/api.ts": "a7be28fbae5b6babf2345626853bfd2225eff1eef8e69c5fb8aae9a4876581ba",
+    "web/app.ts": "7d5f28047a278df89173230e4759b4cfe2b948c3b297db2c701686eebaa2025c"
+  },
+  "suppliedHashes": {
+    "README.md": "d928ddd44c35891a55e5c6182f668b255465de50070b05ebd2150efb5460a899",
+    "data.sql": "0585ef9e15391b4d1bb8090320ab603cea4103c964a9b7c70cfd834f12ad4dc5",
+    "inputs.txt": "1c7ba866b09bdaa85b117007fd4e67c9b2945f080e841627a4f7a294f914abed"
+  },
+  "evaluation": {
+    "cases": 42,
+    "selectedCorrect": 39,
+    "strictCorrect": 39,
+    "wrongSelections": 1,
+    "falseAbsences": 2
+  },
+  "scale": [
+    {
+      "label": "synthetic-10k-100k-unique",
+      "mode": "matching",
+      "catalogueRows": 10000,
+      "cacheSize": 512,
+      "concurrent": 1,
+      "requests": 500,
+      "buildMs": 333.170666,
+      "elapsedMs": 63.59991600000012,
+      "p50Ms": 0.09345800000005511,
+      "p95Ms": 0.1980839999998807,
+      "requestsPerSecond": 7861.645603431285,
+      "countQueries": 0,
+      "analysisComputations": 500,
+      "cacheHits": 0,
+      "coalescedRequests": 0,
+      "candidateVisits": 500,
+      "paidModelCalls": 0,
+      "paidModelCostUSD": 0
+    },
+    {
+      "label": "synthetic-10k-100k-repeated",
+      "mode": "matching",
+      "catalogueRows": 10000,
+      "cacheSize": 512,
+      "concurrent": 8,
+      "requests": 500,
+      "buildMs": 335.0401670000001,
+      "elapsedMs": 10.618040999999948,
+      "p50Ms": 0.010249999999814463,
+      "p95Ms": 0.7132920000001377,
+      "requestsPerSecond": 47089.66559839075,
+      "countQueries": 13,
+      "analysisComputations": 20,
+      "cacheHits": 43,
+      "coalescedRequests": 437,
+      "candidateVisits": 168,
+      "paidModelCalls": 0,
+      "paidModelCostUSD": 0
+    }
+  ],
+  "benchmarkSourceHash": "2ce2822b1b9d8bab09bc0f70845c60485569c98ef3705cb6bd079fee43ffe3be",
+  "dataFingerprint": {
+    "catalogueHash": "33a2bbe46fe18babd251c6957544fb624cae04b79633e1fa5851f80d12742806",
+    "listingCountsHash": "31cffdae0af39da09db9f84e4e74ed18d85f9dd1fd2802c9c9228142d0c5507c"
+  },
+  "dataUnchangedDuringBenchmark": true,
+  "packageLockSha256": "d5bbc54bf85fa5e7e256f6c3ce239fc81b298d86437e5afdb38c0ab0f13b1cf7"
+}

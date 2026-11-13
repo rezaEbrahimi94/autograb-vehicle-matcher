@@ -1,0 +1,592 @@
+{
+  "sourceSqlSha256": "0585ef9e15391b4d1bb8090320ab603cea4103c964a9b7c70cfd834f12ad4dc5",
+  "vehicles": [
+    {
+      "id": "6434473696559104",
+      "make": "Toyota",
+      "model": "86",
+      "badge": "GT",
+      "transmission_type": "Automatic",
+      "fuel_type": "Petrol",
+      "drive_type": "Rear Wheel Drive"
+    },
+    {
+      "id": "5027098813005824",
+      "make": "Toyota",
+      "model": "86",
+      "badge": "GT",
+      "transmission_type": "Manual",
+      "fuel_type": "Petrol",
+      "drive_type": "Rear Wheel Drive"
+    },
+    {
+      "id": "5871523743137792",
+      "make": "Toyota",
+      "model": "86",
+      "badge": "GTS",
+      "transmission_type": "Automatic",
+      "fuel_type": "Petrol",
+      "drive_type": "Rear Wheel Drive"
+    },
+    {
+      "id": "5308573789716480",
+      "make": "Toyota",
+      "model": "86",
+      "badge": "GTS",
+      "transmission_type": "Manual",
+      "fuel_type": "Petrol",
+      "drive_type": "Rear Wheel Drive"
+    },
+    {
+      "id": "6485436503425024",
+      "make": "Toyota",
+      "model": "86",
+      "badge": "GTS Apollo Blue",
+      "transmission_type": "Automatic",
+      "fuel_type": "Petrol",
+      "drive_type": "Rear Wheel Drive"
+    },
+    {
+      "id": "4655849154805760",
+      "make": "Toyota",
+      "model": "86",
+      "badge": "GTS Apollo Blue",
+      "transmission_type": "Manual",
+      "fuel_type": "Petrol",
+      "drive_type": "Rear Wheel Drive"
+    },
+    {
+      "id": "6244675534979072",
+      "make": "Toyota",
+      "model": "Camry",
+      "badge": "Ascent",
+      "transmission_type": "Automatic",
+      "fuel_type": "Hybrid-Petrol",
+      "drive_type": "Front Wheel Drive"
+    },
+    {
+      "id": "6450252131336192",
+      "make": "Toyota",
+      "model": "Camry",
+      "badge": "Ascent",
+      "transmission_type": "Automatic",
+      "fuel_type": "Petrol",
+      "drive_type": "Front Wheel Drive"
+    },
+    {
+      "id": "5118775628136448",
+      "make": "Toyota",
+      "model": "Camry",
+      "badge": "Ascent Sport",
+      "transmission_type": "Automatic",
+      "fuel_type": "Hybrid-Petrol",
+      "drive_type": "Front Wheel Drive"
+    },
+    {
+      "id": "5324352224493568",
+      "make": "Toyota",
+      "model": "Camry",
+      "badge": "Ascent Sport",
+      "transmission_type": "Automatic",
+      "fuel_type": "Petrol",
+      "drive_type": "Front Wheel Drive"
+    },
+    {
+      "id": "5681725581557760",
+      "make": "Toyota",
+      "model": "Camry",
+      "badge": "SL",
+      "transmission_type": "Automatic",
+      "fuel_type": "Hybrid-Petrol",
+      "drive_type": "Front Wheel Drive"
+    },
+    {
+      "id": "4761402271072256",
+      "make": "Toyota",
+      "model": "Camry",
+      "badge": "SL",
+      "transmission_type": "Automatic",
+      "fuel_type": "Petrol",
+      "drive_type": "Front Wheel Drive"
+    },
+    {
+      "id": "4555825674715136",
+      "make": "Toyota",
+      "model": "Camry",
+      "badge": "SX",
+      "transmission_type": "Automatic",
+      "fuel_type": "Petrol",
+      "drive_type": "Front Wheel Drive"
+    },
+    {
+      "id": "5387024387276800",
+      "make": "Toyota",
+      "model": "Kluger",
+      "badge": "Black Edition",
+      "transmission_type": "Automatic",
+      "fuel_type": "Petrol",
+      "drive_type": "Four Wheel Drive"
+    },
+    {
+      "id": "6512924294119424",
+      "make": "Toyota",
+      "model": "Kluger",
+      "badge": "Black Edition",
+      "transmission_type": "Automatic",
+      "fuel_type": "Petrol",
+      "drive_type": "Front Wheel Drive"
+    },
+    {
+      "id": "5246286898921472",
+      "make": "Toyota",
+      "model": "Kluger",
+      "badge": "GX",
+      "transmission_type": "Automatic",
+      "fuel_type": "Petrol",
+      "drive_type": "Four Wheel Drive"
+    },
+    {
+      "id": "6090711829053440",
+      "make": "Toyota",
+      "model": "Kluger",
+      "badge": "GX",
+      "transmission_type": "Automatic",
+      "fuel_type": "Petrol",
+      "drive_type": "Front Wheel Drive"
+    },
+    {
+      "id": "5809236852342784",
+      "make": "Toyota",
+      "model": "Kluger",
+      "badge": "GXL",
+      "transmission_type": "Automatic",
+      "fuel_type": "Petrol",
+      "drive_type": "Four Wheel Drive"
+    },
+    {
+      "id": "4964811922210816",
+      "make": "Toyota",
+      "model": "Kluger",
+      "badge": "GXL",
+      "transmission_type": "Automatic",
+      "fuel_type": "Petrol",
+      "drive_type": "Front Wheel Drive"
+    },
+    {
+      "id": "4683336945500160",
+      "make": "Toyota",
+      "model": "Kluger",
+      "badge": "Grande",
+      "transmission_type": "Automatic",
+      "fuel_type": "Petrol",
+      "drive_type": "Four Wheel Drive"
+    },
+    {
+      "id": "6372186805764096",
+      "make": "Toyota",
+      "model": "Kluger",
+      "badge": "Grande",
+      "transmission_type": "Automatic",
+      "fuel_type": "Petrol",
+      "drive_type": "Front Wheel Drive"
+    },
+    {
+      "id": "4807414054387712",
+      "make": "Toyota",
+      "model": "RAV4",
+      "badge": "Cruiser",
+      "transmission_type": "Automatic",
+      "fuel_type": "Hybrid-Petrol",
+      "drive_type": "Four Wheel Drive"
+    },
+    {
+      "id": "5270476154732544",
+      "make": "Toyota",
+      "model": "RAV4",
+      "badge": "Cruiser",
+      "transmission_type": "Automatic",
+      "fuel_type": "Hybrid-Petrol",
+      "drive_type": "Front Wheel Drive"
+    },
+    {
+      "id": "6294772260012032",
+      "make": "Toyota",
+      "model": "RAV4",
+      "badge": "Cruiser",
+      "transmission_type": "Automatic",
+      "fuel_type": "Petrol",
+      "drive_type": "Front Wheel Drive"
+    },
+    {
+      "id": "4707526201311232",
+      "make": "Toyota",
+      "model": "RAV4",
+      "badge": "Edge",
+      "transmission_type": "Automatic",
+      "fuel_type": "Petrol",
+      "drive_type": "Four Wheel Drive"
+    },
+    {
+      "id": "4637157457133568",
+      "make": "Toyota",
+      "model": "RAV4",
+      "badge": "GX",
+      "transmission_type": "Automatic",
+      "fuel_type": "Hybrid-Petrol",
+      "drive_type": "Four Wheel Drive"
+    },
+    {
+      "id": "5633578956226560",
+      "make": "Toyota",
+      "model": "RAV4",
+      "badge": "GX",
+      "transmission_type": "Automatic",
+      "fuel_type": "Hybrid-Petrol",
+      "drive_type": "Front Wheel Drive"
+    },
+    {
+      "id": "5224610668740608",
+      "make": "Toyota",
+      "model": "RAV4",
+      "badge": "GX",
+      "transmission_type": "Automatic",
+      "fuel_type": "Petrol",
+      "drive_type": "Front Wheel Drive"
+    },
+    {
+      "id": "4506798421704704",
+      "make": "Toyota",
+      "model": "RAV4",
+      "badge": "GX",
+      "transmission_type": "Manual",
+      "fuel_type": "Petrol",
+      "drive_type": "Front Wheel Drive"
+    },
+    {
+      "id": "4989001178021888",
+      "make": "Toyota",
+      "model": "RAV4",
+      "badge": "GXL",
+      "transmission_type": "Automatic",
+      "fuel_type": "Hybrid-Petrol",
+      "drive_type": "Four Wheel Drive"
+    },
+    {
+      "id": "6114901084864512",
+      "make": "Toyota",
+      "model": "RAV4",
+      "badge": "GXL",
+      "transmission_type": "Automatic",
+      "fuel_type": "Hybrid-Petrol",
+      "drive_type": "Front Wheel Drive"
+    },
+    {
+      "id": "5149400045191168",
+      "make": "Toyota",
+      "model": "RAV4",
+      "badge": "GXL",
+      "transmission_type": "Automatic",
+      "fuel_type": "Petrol",
+      "drive_type": "Front Wheel Drive"
+    },
+    {
+      "id": "5715778363981824",
+      "make": "Volkswagen",
+      "model": "Amarok",
+      "badge": "TDI400 Core",
+      "transmission_type": "Manual",
+      "fuel_type": "Diesel",
+      "drive_type": "Four Wheel Drive"
+    },
+    {
+      "id": "4871353433849856",
+      "make": "Volkswagen",
+      "model": "Amarok",
+      "badge": "TDI420",
+      "transmission_type": "Automatic",
+      "fuel_type": "Diesel",
+      "drive_type": "Rear Wheel Drive"
+    },
+    {
+      "id": "4589878457139200",
+      "make": "Volkswagen",
+      "model": "Amarok",
+      "badge": "TDI420 Core",
+      "transmission_type": "Automatic",
+      "fuel_type": "Diesel",
+      "drive_type": "Four Wheel Drive"
+    },
+    {
+      "id": "4602005163081728",
+      "make": "Volkswagen",
+      "model": "Amarok",
+      "badge": "TDI420 Core Plus",
+      "transmission_type": "Automatic",
+      "fuel_type": "Diesel",
+      "drive_type": "Four Wheel Drive"
+    },
+    {
+      "id": "5504672131448832",
+      "make": "Volkswagen",
+      "model": "Amarok",
+      "badge": "TDI500 Core",
+      "transmission_type": "Manual",
+      "fuel_type": "Diesel",
+      "drive_type": "Four Wheel Drive"
+    },
+    {
+      "id": "5978593721057280",
+      "make": "Volkswagen",
+      "model": "Amarok",
+      "badge": "TDI550 Canyon",
+      "transmission_type": "Automatic",
+      "fuel_type": "Diesel",
+      "drive_type": "Four Wheel Drive"
+    },
+    {
+      "id": "4730615945494528",
+      "make": "Volkswagen",
+      "model": "Amarok",
+      "badge": "TDI550 Core",
+      "transmission_type": "Automatic",
+      "fuel_type": "Diesel",
+      "drive_type": "Four Wheel Drive"
+    },
+    {
+      "id": "5997253340692480",
+      "make": "Volkswagen",
+      "model": "Amarok",
+      "badge": "TDI550 Highline",
+      "transmission_type": "Automatic",
+      "fuel_type": "Diesel",
+      "drive_type": "Four Wheel Drive"
+    },
+    {
+      "id": "5434303387271168",
+      "make": "Volkswagen",
+      "model": "Amarok",
+      "badge": "TDI550 Sportline",
+      "transmission_type": "Automatic",
+      "fuel_type": "Diesel",
+      "drive_type": "Four Wheel Drive"
+    },
+    {
+      "id": "5158834049908736",
+      "make": "Volkswagen",
+      "model": "Amarok",
+      "badge": "TDI580 Highline Black",
+      "transmission_type": "Automatic",
+      "fuel_type": "Diesel",
+      "drive_type": "Four Wheel Drive"
+    },
+    {
+      "id": "4951649860714496",
+      "make": "Volkswagen",
+      "model": "Amarok",
+      "badge": "TDI580 Ultimate",
+      "transmission_type": "Automatic",
+      "fuel_type": "Diesel",
+      "drive_type": "Four Wheel Drive"
+    },
+    {
+      "id": "4749339721203712",
+      "make": "Volkswagen",
+      "model": "Golf",
+      "badge": "110TSI Comfortline",
+      "transmission_type": "Automatic",
+      "fuel_type": "Petrol",
+      "drive_type": "Front Wheel Drive"
+    },
+    {
+      "id": "4980237163036672",
+      "make": "Volkswagen",
+      "model": "Golf",
+      "badge": "110TSI Highline",
+      "transmission_type": "Automatic",
+      "fuel_type": "Petrol",
+      "drive_type": "Front Wheel Drive"
+    },
+    {
+      "id": "4890077209559040",
+      "make": "Volkswagen",
+      "model": "Golf",
+      "badge": "110TSI Trendline",
+      "transmission_type": "Automatic",
+      "fuel_type": "Petrol",
+      "drive_type": "Front Wheel Drive"
+    },
+    {
+      "id": "4909868418859008",
+      "make": "Volkswagen",
+      "model": "Golf",
+      "badge": "110TSI Trendline",
+      "transmission_type": "Manual",
+      "fuel_type": "Petrol",
+      "drive_type": "Front Wheel Drive"
+    },
+    {
+      "id": "5734502139691008",
+      "make": "Volkswagen",
+      "model": "Golf",
+      "badge": "Alltrack 132TSI",
+      "transmission_type": "Automatic",
+      "fuel_type": "Petrol",
+      "drive_type": "Four Wheel Drive"
+    },
+    {
+      "id": "4608602232848384",
+      "make": "Volkswagen",
+      "model": "Golf",
+      "badge": "Alltrack 132TSI Premium",
+      "transmission_type": "Automatic",
+      "fuel_type": "Petrol",
+      "drive_type": "Four Wheel Drive"
+    },
+    {
+      "id": "4628393442148352",
+      "make": "Volkswagen",
+      "model": "Golf",
+      "badge": "GTI",
+      "transmission_type": "Automatic",
+      "fuel_type": "Petrol",
+      "drive_type": "Front Wheel Drive"
+    },
+    {
+      "id": "5824662093168640",
+      "make": "Volkswagen",
+      "model": "Golf",
+      "badge": "R",
+      "transmission_type": "Automatic",
+      "fuel_type": "Petrol",
+      "drive_type": "Four Wheel Drive"
+    },
+    {
+      "id": "5803147863785472",
+      "make": "Volkswagen",
+      "model": "Tiguan",
+      "badge": "110TSI Comfortline",
+      "transmission_type": "Automatic",
+      "fuel_type": "Petrol",
+      "drive_type": "Front Wheel Drive"
+    },
+    {
+      "id": "5050605907214336",
+      "make": "Volkswagen",
+      "model": "Tiguan",
+      "badge": "110TSI Comfortline Allspace",
+      "transmission_type": "Automatic",
+      "fuel_type": "Petrol",
+      "drive_type": "Front Wheel Drive"
+    },
+    {
+      "id": "4514044232859648",
+      "make": "Volkswagen",
+      "model": "Tiguan",
+      "badge": "110TSI Trendline",
+      "transmission_type": "Automatic",
+      "fuel_type": "Petrol",
+      "drive_type": "Front Wheel Drive"
+    },
+    {
+      "id": "5382658418802688",
+      "make": "Volkswagen",
+      "model": "Tiguan",
+      "badge": "132TSI Comfortline",
+      "transmission_type": "Automatic",
+      "fuel_type": "Petrol",
+      "drive_type": "Four Wheel Drive"
+    },
+    {
+      "id": "4819708465381376",
+      "make": "Volkswagen",
+      "model": "Tiguan",
+      "badge": "132TSI Comfortline Allspace",
+      "transmission_type": "Automatic",
+      "fuel_type": "Petrol",
+      "drive_type": "Four Wheel Drive"
+    },
+    {
+      "id": "5811435875598336",
+      "make": "Volkswagen",
+      "model": "Tiguan",
+      "badge": "132TSI R-Line Edition",
+      "transmission_type": "Automatic",
+      "fuel_type": "Petrol",
+      "drive_type": "Four Wheel Drive"
+    },
+    {
+      "id": "5945608372224000",
+      "make": "Volkswagen",
+      "model": "Tiguan",
+      "badge": "162TSI Highline",
+      "transmission_type": "Automatic",
+      "fuel_type": "Petrol",
+      "drive_type": "Four Wheel Drive"
+    },
+    {
+      "id": "5332080883924992",
+      "make": "Volkswagen",
+      "model": "Tiguan",
+      "badge": "162TSI Highline Allspace",
+      "transmission_type": "Automatic",
+      "fuel_type": "Petrol",
+      "drive_type": "Four Wheel Drive"
+    }
+  ],
+  "counts": {
+    "4506798421704704": 1,
+    "4514044232859648": 3,
+    "4555825674715136": 40,
+    "4589878457139200": 18,
+    "4608602232848384": 6,
+    "4628393442148352": 15,
+    "4637157457133568": 25,
+    "4655849154805760": 1,
+    "4683336945500160": 17,
+    "4707526201311232": 22,
+    "4730615945494528": 15,
+    "4749339721203712": 22,
+    "4761402271072256": 17,
+    "4807414054387712": 23,
+    "4819708465381376": 10,
+    "4890077209559040": 26,
+    "4909868418859008": 4,
+    "4951649860714496": 15,
+    "4964811922210816": 35,
+    "4980237163036672": 19,
+    "4989001178021888": 15,
+    "5050605907214336": 4,
+    "5118775628136448": 32,
+    "5149400045191168": 23,
+    "5158834049908736": 9,
+    "5224610668740608": 38,
+    "5246286898921472": 33,
+    "5270476154732544": 21,
+    "5308573789716480": 2,
+    "5324352224493568": 22,
+    "5332080883924992": 37,
+    "5382658418802688": 11,
+    "5387024387276800": 8,
+    "5434303387271168": 9,
+    "5504672131448832": 2,
+    "5633578956226560": 19,
+    "5681725581557760": 9,
+    "5715778363981824": 1,
+    "5734502139691008": 4,
+    "5809236852342784": 25,
+    "5811435875598336": 13,
+    "5824662093168640": 28,
+    "5945608372224000": 33,
+    "5978593721057280": 6,
+    "5997253340692480": 37,
+    "6090711829053440": 51,
+    "6114901084864512": 12,
+    "6244675534979072": 88,
+    "6294772260012032": 20,
+    "6372186805764096": 2,
+    "6434473696559104": 3,
+    "6450252131336192": 41,
+    "6485436503425024": 1,
+    "6512924294119424": 7
+  }
+}

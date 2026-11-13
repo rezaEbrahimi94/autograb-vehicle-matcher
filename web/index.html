@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Vehicle matcher</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <p class="eyebrow">AutoGrab code challenge</p>
+        <h1>Find a catalogue vehicle</h1>
+        <p>
+          Enter a listing description. The matcher interprets its vehicle details and returns an ID
+          with a confidence score.
+        </p>
+        <p id="status" role="status">Connecting to the local catalogue…</p>
+      </header>
+      <section>
+        <form id="form">
+          <label for="input">Vehicle description</label
+          ><textarea id="input" maxlength="10000" rows="4">
+VW Golf R with engine swap from Toyota 86 GT</textarea>
+          <div class="actions">
+            <button type="button" data-example="Toyota 86 GT manual, not automatic">
+              Manual gearbox</button
+            ><button type="button" data-example="VW Amarok Ultimate">Missing details</button
+            ><button type="button" data-example="Ford Ranger XLT Dual Cab">Outside catalogue</button
+            ><button class="primary" type="submit" id="submit">Find vehicle</button>
+          </div>
+        </form>
+        <p id="message" role="status" aria-live="polite"></p>
+        <article id="result" hidden></article>
+      </section>
+      <section>
+        <h2>How it works</h2>
+        <ol>
+          <li>Normalize the description and identify catalogue terms.</li>
+          <li>Separate the sale vehicle from equipment, donor and replacement mentions.</li>
+          <li>Compare supported fields and explicit contradictions.</li>
+          <li>Keep equally supported candidates; choose the one with the most listings.</li>
+        </ol>
+        <p>
+          Matching and SQL queries run locally. No language model or external inference API is used.
+        </p>
+      </section>
+      <section>
+        <h2>What the score means</h2>
+        <p>
+          Confidence is a heuristic from 0 to 10, not a probability. Missing or ambiguous details
+          reduce certainty. A null ID can mean no compatible record or unresolved interpretation;
+          read the explanation.
+        </p>
+        <p>
+          In the latest frozen 42-listing evaluation, 39 IDs and candidate sets were correct
+          (92.9%): one wrong selection and two missed matches. This small, provisionally labelled
+          sample does not establish production accuracy.
+        </p>
+      </section>
+      <footer>
+        Local demonstration · Catalogue changes require a restart · See README for setup, tests and
+        limitations.
+      </footer>
+    </main>
+  </body>
+</html>
